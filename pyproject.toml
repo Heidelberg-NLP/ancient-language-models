@@ -1,0 +1,22 @@
+[project]
+name = "alm"
+version = "0.1.0"
+description = "Resources and tools for exploring large language models in classical philology, including pipelines for PoS tagging, lemmatization, and dependency parsing."
+authors = [
+    {name = "Frederick Riemenschneider", email = "riemenschneider@cl.uni-heidelberg.de"},
+]
+dependencies = [
+    "transformers>=4.44.2",
+    "accelerate>=0.34.2",
+    "wandb>=0.18.1",
+    "evaluate>=0.4.3",
+    "conllu>=5.0.2",
+    "seqeval>=1.2.2",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
